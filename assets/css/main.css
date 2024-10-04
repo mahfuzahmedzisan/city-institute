@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .container {
+      @apply max-w-[1400px] mx-auto lg:w-3/4 w-11/12;
+   }
+
+   .tittle {
+      @apply text-center mb-14;
+   }
+
+   .tittle h2 {
+      @apply text-4xl font-bold text-teal-900 capitalize;
+   }
+
+   .tittle p {
+      @apply text-lg italic text-gray-400;
+   }
+   section{
+      @apply py-16 md:py-20;
+   }
+}
+
+.slick-next:before,
+.slick-prev:before {
+   @apply text-teal-600 text-3xl leading-none;
+}
+
+.carousel-section .slick-prev {
+   @apply left-12;
+}
+
+.carousel-section .slick-next {
+   @apply right-12;
+}
+
+.carousel-section .slick-next,
+.carousel-section .slick-prev {
+   @apply z-[1];
+}
+
+.carousel-section .slick-dots {
+   @apply bottom-6;
+}
+
+.slick-dots li button::before {
+   @apply text-teal-600 text-base;
+}
+.slick-dots li.slick-active button:before
+{
+   @apply text-teal-600 opacity-75;
+}
